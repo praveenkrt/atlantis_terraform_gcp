@@ -25,6 +25,7 @@ resource "google_compute_instance" "default" {
   tags = ["http-server", "https-server"] # Optional, for firewall rules
 }
 
+
 output "instance_name" {
   value = google_compute_instance.default.name
 }
